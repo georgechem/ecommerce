@@ -1,13 +1,16 @@
 import React from 'react';
 import {useState} from 'react';
+import {useHistory} from 'react-router-dom';
 
 import {url_login} from "../../config";
 import {fetchPostConfig} from "../../config";
 
 
+
 import './Login.scss';
 
 const Login = () => {
+    const history = useHistory();
     const [credentials, setCredentials] = useState({
         email: '',
         password: ''
@@ -26,7 +29,6 @@ const Login = () => {
             });
         }
 
-
     }
 
     const onSubmit = () => {
@@ -34,11 +36,9 @@ const Login = () => {
         fetch(url_login, fetchPostConfig(credentials))
             .then(res=>res.json())
             .then(result=>{
-                console.log(result.status);
                 if(result.status === 'success'){
-
+                    history.push("/");
                 }
-
             })
             .catch(err=>{
                 console.log(err);
