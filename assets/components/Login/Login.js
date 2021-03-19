@@ -9,7 +9,7 @@ import {fetchPostConfig} from "../../config";
 
 import './Login.scss';
 
-const Login = () => {
+const Login = (props) => {
     // remember routs
     const history = useHistory();
     // store credentials

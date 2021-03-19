@@ -36,9 +36,7 @@ const MyApp = (props) => {
     return (
         <Router>
             <>
-                <Nav
-                    isLogged={isLogged}
-                />
+                <Nav isLogged={isLogged}/>
                 <Route path="/" component={Home} exact/>
                 <Route path="/cart" component={Cart}/>
                 <Route path="/login" component={Login}/>
