@@ -441,13 +441,14 @@ class DefaultController extends AbstractController
     public function generateToken(Request $request, UserService $userService, Filesystem $filesystem):Response
     {
 
-        $data = hash('sha3-512', 'test');
-
-        $filesystem->dumpFile('request.txt', $data);
-
-        $response = new Response();
+        $response = new JsonResponse('ok');
 
         $status = $userService->verifyUser($request, $response);
+        if(!$status){
+            return new JsonResponse('error');
+        }
+
+        //$filesystem->dumpFile('request.txt', $response);
 
         return $response;
     }
