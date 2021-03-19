@@ -40,7 +40,7 @@ const MyApp = (props) => {
                 <Route path="/" component={Home} exact/>
                 <Route path="/cart" component={Cart}/>
                 <Route path="/login"  render={()=>{
-                    return <Login setIsLogged={props.setIsLogged} />;
+                    return <Login setIsLogged={setIsLogged} />;
                 }}/>
                 <Route path="/logout" component={Logout}/>
             </>
@@ -49,4 +49,5 @@ const MyApp = (props) => {
 
     );
 }
+
 export default MyApp;
