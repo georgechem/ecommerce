@@ -13,36 +13,8 @@ class DefaultController extends AbstractController
      */
     public function index(): Response
     {
-        $data = "<!doctype html>
-<head>
-  <meta charset=\"utf-8\">
-  <title></title>
-  <meta name=\"description\" content=\"\">
-  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
-  <meta property=\"og:title\" content=\"\">
-  <meta property=\"og:type\" content=\"\">
-  <meta property=\"og:url\" content=\"\">
-  <meta property=\"og:image\" content=\"\">
 
-
-</head>
-
-<body>
-    <div id=\"root\">
-    
-</div>
-  
-</body>
-
-</html>";
-
-        $response = new Response();
-        $response->headers->set('Content-Type','text/html');
-        $response->setCharset('charset=utf-8');
-
-        $response->setContent($data);
-
-        return $response;
+        return $this->render('page/index.html.twig',[]);
     }
 
     /**
