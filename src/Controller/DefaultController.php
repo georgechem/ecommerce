@@ -438,13 +438,17 @@ class DefaultController extends AbstractController
     /**
      * @Route("/api/login", name="api_login", methods={"POST"})
      */
-    public function generateToken(Request $request, UserService $userService, Filesystem $filesystem):JsonResponse
+    public function generateToken(Request $request, UserService $userService, Filesystem $filesystem):Response
     {
 
-        //$filesystem->dumpFile('request.txt', $data['email']);
+        $data = hash('sha3-512', 'test');
 
-        $status = $userService->verifyUser($request);
+        $filesystem->dumpFile('request.txt', $data);
 
-        return new JsonResponse($status);
+        $response = new Response();
+
+        $status = $userService->verifyUser($request, $response);
+
+        return $response;
     }
 }

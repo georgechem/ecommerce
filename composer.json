@@ -18,6 +18,7 @@
         "symfony/yaml": "5.2.*",
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/twig": "^2.12|^3.0"
+
     },
     "require-dev": {
         "symfony/maker-bundle": "^1.29"
@@ -65,6 +66,6 @@
             "require": "5.2.*"
         }
     },
-    "name": "georgechem/app19Mar21",
+    "name": "georgechem/appmar1921",
     "description": ""
 }

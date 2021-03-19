@@ -4,6 +4,7 @@
 namespace App\Service;
 
 
+use Symfony\Component\HttpFoundation\Cookie;
 use Symfony\Component\HttpFoundation\Request;
 
 class UserService
@@ -41,7 +42,12 @@ class UserService
 
     }
 
-    public function verifyUser(Request $request)
+    private function prepareToken()
+    {
+        return hash('sha3-512','test');
+    }
+
+    public function verifyUser(Request $request, $response)
     {
         $credentials = $this->getCredentials($request);
 
@@ -54,6 +60,15 @@ class UserService
         if(!$isValid){
             return false;
         }
+
+        $token = $this->prepareToken();
+        $response->headers->setCookie(
+            Cookie::create('token')
+            ->withValue($token)
+            ->withExpires(time()+3600)
+            ->withSecure(true)
+        );
+
 
         return true;
 
