@@ -19,7 +19,7 @@ class DefaultController extends AbstractController
     }
 
     /**
-     * @Route("/api/products", name="products", methods={"GET"})
+     * @Route("/api/products", name="api_products", methods={"GET"})
      */
     public function getUsers():JsonResponse
     {
@@ -430,5 +430,13 @@ class DefaultController extends AbstractController
 
         return new JsonResponse($products);
 
+    }
+
+    /**
+     * @Route("/api/login", name="api_login", methods={"POST"})
+     */
+    public function generateToken():JsonResponse
+    {
+        return new JsonResponse('ok');
     }
 }
