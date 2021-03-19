@@ -1,14 +1,13 @@
 import React from 'react';
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 
 import {url_login} from "../../config";
 import {fetchPostConfig} from "../../config";
 
 
-
 import './Login.scss';
 
-const Login = (props) => {
+const Login = () => {
     const [credentials, setCredentials] = useState({
         email: '',
         password: ''
@@ -30,25 +29,25 @@ const Login = (props) => {
 
     }
 
-    const onSubmit = (e) => {
+    const onSubmit = () => {
 
         fetch(url_login, fetchPostConfig(credentials))
             .then(res=>res.json())
             .then(result=>{
                 console.log(result.status);
                 if(result.status === 'success'){
+
                 }
 
             })
             .catch(err=>{
                 console.log(err);
             });
-
-
     }
 
     return (
         <>
+            <form onSubmit={(e)=>{e.preventDefault();}}>
             <div className={'LoginForm'}>
                 <label
                     className={'LoginForm__label'}
@@ -76,6 +75,7 @@ const Login = (props) => {
                     value={'Log In'}
                     type="submit"/>
             </div>
+            </form>
         </>
     );
 }
