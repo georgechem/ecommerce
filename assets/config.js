@@ -21,7 +21,7 @@ export const fetchPostConfig = (body) => {
 
 };
 // Config for method=GET fn=FETCH
-export const url_authorize = prefix + '/api/authorize';
+export const url_authorize = prefix + '/api/authorization';
 
 export const fetchGetConfig = () => {
     return {

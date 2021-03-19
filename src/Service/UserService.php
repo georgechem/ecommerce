@@ -65,7 +65,7 @@ class UserService
         $response->headers->setCookie(
             Cookie::create('token')
             ->withValue($token)
-            ->withExpires(time()+6)
+            ->withExpires(time()+60)
             ->withSecure(true)
         );
 
@@ -76,11 +76,12 @@ class UserService
 
     private function getToken(Request $request)
     {
-        if ($request->cookies->get('token')){
+        $token = $request->cookies->get('token');
+        if ($token){
             // if token exists and equal
             // ORIGINALLY CHECK WITH DB but here just assume
             // for evert token (if exists)
-            return true;
+            return $token;
         }
 
         return false;
@@ -91,8 +92,12 @@ class UserService
     {
         $token = $this->getToken($request);
 
+        if($token) {
+            return ["auth"=>true];
+        }else {
+            return ["auth"=>false];
+        }
 
-        return $token;
     }
 
 }
