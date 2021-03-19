@@ -7,12 +7,23 @@ import Home from './components/Home/Home';
 import Cart from './components/Cart/Cart';
 import Login from './components/Login/Login';
 
+import {url_authorize} from "./config";
+import {fetchGetConfig} from "./config";
+
 import './styles/myStyles.scss';
 
 const MyApp = () => {
     const [isLogged, setIsLogged] = useState('false');
 
     useEffect(()=>{
+        fetch(url_authorize, fetchGetConfig())
+            .then(res=>res.json())
+            .then(result=>{
+                console.log(result);
+            })
+            .catch(err=>{
+                console.log(err);
+            })
 
     },[]);
 

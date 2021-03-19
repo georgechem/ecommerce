@@ -6,7 +6,7 @@ const prefix = '';
 
 export const url_login = prefix + '/api/login';
 
-// Config for POST FETCH
+// Config for method=POST fn=FETCH -- To LOG-IN AND GET TOKEN
 export const fetchPostConfig = (body) => {
     return {
         method: 'POST',
@@ -19,4 +19,18 @@ export const fetchPostConfig = (body) => {
         body: JSON.stringify(body)
     }
 
+};
+// Config for method=GET fn=FETCH
+export const url_authorize = prefix + '/api/authorize';
+
+export const fetchGetConfig = () => {
+    return {
+        method: 'GET',
+        mode: 'cors',
+        cache: 'no-cache',
+        credentials: 'same-origin',
+        headers:{
+            'Content-Type': 'application/json'
+        }
+    };
 }

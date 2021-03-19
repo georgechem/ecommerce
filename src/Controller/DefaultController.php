@@ -436,6 +436,14 @@ class DefaultController extends AbstractController
     }
 
     /**
+     * @Route("/api/authorization", name="api_authorization", methods={"GET"})
+     */
+    public function getAuthorized():JsonResponse
+    {
+        return new JsonResponse('/api/authorization');
+    }
+
+    /**
      * @Route("/api/login", name="api_login", methods={"POST"})
      */
     public function generateToken(Request $request, UserService $userService, Filesystem $filesystem):Response

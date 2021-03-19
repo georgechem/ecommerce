@@ -10,12 +10,15 @@ import {fetchPostConfig} from "../../config";
 import './Login.scss';
 
 const Login = () => {
+    // remember routs
     const history = useHistory();
+    // store credentials
     const [credentials, setCredentials] = useState({
         email: '',
         password: ''
     })
 
+    // On Credentials Change
     const onChange = (e) => {
         if(e.target.id === 'email'){
             setCredentials({
@@ -30,9 +33,10 @@ const Login = () => {
         }
 
     }
-
+    // SUBMIT REQUEST
     const onSubmit = () => {
 
+        // GET TOKEN FROM SERVER
         fetch(url_login, fetchPostConfig(credentials))
             .then(res=>res.json())
             .then(result=>{
@@ -44,7 +48,7 @@ const Login = () => {
                 console.log(err);
             });
     }
-
+    // Generate Form for request-response
     return (
         <>
             <form onSubmit={(e)=>{e.preventDefault();}}>
