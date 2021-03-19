@@ -41,6 +41,7 @@ const Login = (props) => {
             .then(res=>res.json())
             .then(result=>{
                 if(result.status === 'success'){
+                    props.setIsLogged(true);
                     history.push("/");
                 }
             })
