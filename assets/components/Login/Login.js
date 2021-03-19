@@ -4,6 +4,8 @@ import {useState, useEffect} from 'react';
 import {url_login} from "../../config";
 import {fetchPostConfig} from "../../config";
 
+
+
 import './Login.scss';
 
 const Login = (props) => {
@@ -33,11 +35,16 @@ const Login = (props) => {
         fetch(url_login, fetchPostConfig(credentials))
             .then(res=>res.json())
             .then(result=>{
-                console.log(result);
+                console.log(result.status);
+                if(result.status === 'success'){
+                }
+
             })
             .catch(err=>{
                 console.log(err);
-            })
+            });
+
+
     }
 
     return (
@@ -72,4 +79,5 @@ const Login = (props) => {
         </>
     );
 }
+
 export default Login;
