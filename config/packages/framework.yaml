@@ -1,7 +1,7 @@
 # see https://symfony.com/doc/current/reference/configuration/framework.html
 framework:
     # uncomment next line for redirecting not existing routes to chosen controller and method
-    #error_controller: App\Controller\DefaultController::index
+    error_controller: App\Controller\DefaultController::index
     secret: '%env(APP_SECRET)%'
     #csrf_protection: true
     #http_method_override: true
