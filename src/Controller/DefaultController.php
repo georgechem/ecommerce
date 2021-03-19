@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Service\UserService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -437,10 +438,13 @@ class DefaultController extends AbstractController
     /**
      * @Route("/api/login", name="api_login", methods={"POST"})
      */
-    public function generateToken(Request $request, UserService $userService):JsonResponse
+    public function generateToken(Request $request, UserService $userService, Filesystem $filesystem):JsonResponse
     {
-        $userService->verifyUser($request);
 
-        return new JsonResponse('ok');
+        //$filesystem->dumpFile('request.txt', $data['email']);
+
+        $status = $userService->verifyUser($request);
+
+        return new JsonResponse($status);
     }
 }
