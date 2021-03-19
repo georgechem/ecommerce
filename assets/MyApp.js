@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {useState, useEffect} from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 import Nav from './components/Nav/Nav';
@@ -10,6 +10,12 @@ import Login from './components/Login/Login';
 import './styles/myStyles.scss';
 
 const MyApp = () => {
+    const [isLogged, setIsLogged] = useState('false');
+
+    useEffect(()=>{
+
+    },[]);
+
     return (
         <Router>
             <>
