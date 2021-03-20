@@ -41,6 +41,14 @@
       margin-left:  5px;
       color: black
     }
+    &__color{
+      text-align: center;
+      margin: 15px 0;
+      &--box{
+        border: 1px solid black;
+        margin: 5px;
+      }
+    }
 
   }
 }

@@ -17,6 +17,7 @@ const Card = (props) => {
                 ? <span style={{color: 'red'}}>Out of Stock</span>
                 : '');
 
+
     return (
             <div className="Card__item">
                 <div className="Card__item__box">
@@ -59,7 +60,19 @@ const Card = (props) => {
                         </span>
 
                     </div>
-                    <div className="Card__item__">{props.product.colors}</div>
+                    <div className="Card__item__color">
+                        colors:&nbsp;
+                        {props.product.colors.map(color=>{
+                            return (<span
+                                style={{backgroundColor: color}}
+                                className="Card__item__color--box">
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                            </span>);
+                        })}
+
+
+
+                    </div>
                     <div className="Card__item__">{props.product.deliveryIn}</div>
                 </div>
             </div>
