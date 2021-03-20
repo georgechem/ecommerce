@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   font-family: sans-serif;
   &__item{
+    position: relative;
     margin: 20px 0;
     background-color: #eee;
     padding: 10px;
@@ -40,6 +41,10 @@
     &__rating{
       margin-left:  5px;
       color: black
+    }
+    &__delivery{
+      text-align: center;
+      font-size: 0.8rem;
     }
     &__color{
       text-align: center;

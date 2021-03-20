@@ -71,7 +71,11 @@ const Card = (props) => {
                         })}
 
                     </div>
-                    <div className="Card__item__">{props.product.deliveryIn}</div>
+                    <div className="Card__item__delivery">
+                        <i className="fas fa-shipping-fast"></i>
+                        &nbsp;{props.product.deliveryIn}
+                        &nbsp;day(s)
+                    </div>
                 </div>
             </div>
     );
