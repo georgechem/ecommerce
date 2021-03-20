@@ -1,5 +1,5 @@
 import React from 'react';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import {useHistory} from 'react-router-dom';
 
 import {url_login} from "../../config";
@@ -12,11 +12,20 @@ import './Login.scss';
 const Login = (props) => {
     // remember routs
     const history = useHistory();
+    const [error, setError] = useState('');
     // store credentials
     const [credentials, setCredentials] = useState({
         email: '',
         password: ''
     })
+    // clear errorMsg Timeout when component Unmounts
+    useEffect(() =>{
+        return function clean(){
+            if(error !== ''){
+                clearTimeout(errorMsg);
+            }
+        }
+    },[]);
 
     // On Credentials Change
     const onChange = (e) => {
@@ -43,6 +52,23 @@ const Login = (props) => {
                 if(result.status === 'success'){
                     props.setIsLogged(true);
                     history.push("/");
+                }else{
+                    setError(
+                        <div
+                            style={{
+                                marginTop: '20px',
+                                backgroundColor: 'red',
+                                color: 'white',
+                                textAlign: 'center',
+                                padding: '15px',
+                            }}
+                        >
+                            Access Denied
+                        </div>
+                    );
+                    const errorMsg = setTimeout(function () {
+                        setError('');
+                    }, 2000)
                 }
             })
             .catch(err=>{
@@ -53,7 +79,20 @@ const Login = (props) => {
     return (
         <>
             <form onSubmit={(e)=>{e.preventDefault();}}>
+                {error}
             <div className={'LoginForm'}>
+                <p>
+                    <em>email: username@example.com,</em>
+                </p>
+                <p
+                    style={{
+                        borderBottom: '1px solid black',
+                        paddingBottom: '5px',
+                        margin: '5px 10px',
+                    }}
+                >
+                    <em>password: user</em>
+                </p>
                 <label
                     className={'LoginForm__label'}
                     htmlFor={'email'}>Email

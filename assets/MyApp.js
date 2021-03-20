@@ -39,10 +39,19 @@ const MyApp = (props) => {
                 <Nav isLogged={isLogged}/>
                 <Route path="/" component={Home} exact/>
                 <Route path="/cart" component={Cart}/>
-                <Route path="/login"  render={()=>{
-                    return <Login setIsLogged={setIsLogged} />;
+                <Route path="/login"
+                       render={()=>{
+                    return <Login
+                        setIsLogged={setIsLogged}
+                    />;
                 }}/>
-                <Route path="/logout" component={Logout}/>
+                <Route path="/logout"
+                       render={()=>{
+                           return <Logout
+                               setIsLogged={setIsLogged}
+                           />
+                       }}
+                />
             </>
         </Router>
 
