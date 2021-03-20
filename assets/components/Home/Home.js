@@ -1,10 +1,11 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
+import './Home.scss';
 
 const Home = (props) => {
     return (
         <>
-            <div>Home</div>
+            <div className="Home">Home</div>
         </>
     );
 }

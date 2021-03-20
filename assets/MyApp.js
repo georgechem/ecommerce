@@ -7,6 +7,7 @@ import Home from './components/Home/Home';
 import Cart from './components/Cart/Cart';
 import Login from './components/Login/Login';
 import Logout from './components/Logout/Logout';
+import Footer from './components/Footer/Footer';
 
 import {url_authorize} from "./config";
 import {fetchGetConfig} from "./config";
@@ -51,6 +52,7 @@ const MyApp = (props) => {
                            />
                        }}
                 />
+                <Footer />
             </>
         </Router>
 

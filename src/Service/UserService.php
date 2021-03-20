@@ -65,7 +65,7 @@ class UserService
         $response->headers->setCookie(
             Cookie::create('token')
             ->withValue($token)
-            ->withExpires(time()+60)
+            ->withExpires(time()+3600)
             ->withSecure(true)
         );
 
