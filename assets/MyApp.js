@@ -20,7 +20,16 @@ const MyApp = (props) => {
     const [userCart, setUserCart] = useState({
         items: []
     });
+    const addToCart = (product)=>{
+        const cart = userCart.items;
+        cart.push(product);
+        setUserCart({
+            items: cart
+        });
+        console.log(userCart);
+    }
 
+    // Authorize User
     useEffect(()=>{
         fetch(url_authorize, fetchGetConfig())
             .then(res=>res.json())
@@ -36,11 +45,18 @@ const MyApp = (props) => {
             })
 
     },[]);
+    // Fetch All products
     useEffect(()=>{
         fetch(url_getAllProducts, fetchGetConfig)
             .then(res=>res.json())
             .then(result=>{
-                setAllProducts(result);
+                const transformedResult = [];
+                // Add property to original product
+                result.map((product)=>{
+                    product.amount = 0;
+                    transformedResult.push(product);
+                });
+                setAllProducts(transformedResult);
             })
             .catch(err=>{
                 console.log(err);
@@ -50,13 +66,26 @@ const MyApp = (props) => {
     return (
         <Router>
             <>
-                <Nav isLogged={isLogged}/>
+                <Nav
+                    isLogged={isLogged}
+                    userCart={userCart}
+                />
                 <Route path="/"
                        render={()=>{
-                           return <Home allProducts={allProducts}/>
+                           return (<Home
+                               allProducts={allProducts}
+                               addToCart={addToCart}
+                           />);
                        }}
                        exact/>
-                <Route path="/cart" component={Cart}/>
+                <Route path="/cart"
+                       render={()=>{
+                           return (<Cart
+                               userCart={userCart}
+                               setUserCart={setUserCart}
+                           />);
+                       }}
+                />
                 <Route path="/login"
                        render={()=>{
                     return <Login

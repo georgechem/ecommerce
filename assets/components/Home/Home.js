@@ -12,7 +12,10 @@ const Home = (props) => {
         if(props.allProducts !== null){
             const allProductsList = [];
             props.allProducts.forEach(product=>{
-                allProductsList.push(<Card key={product.id} product={product}/>);
+                allProductsList.push(<Card
+                    addToCart={props.addToCart}
+                    key={product.id}
+                    product={product}/>);
             });
             setCards(allProductsList);
         }

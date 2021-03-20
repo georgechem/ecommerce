@@ -72,7 +72,7 @@ const Card = (props) => {
 
                     </div>
                     <div className="Card__item__delivery">
-                        <i className="fas fa-shipping-fast"></i>
+                        <i className="fas fa-shipping-fast"/>
                         &nbsp;{props.product.deliveryIn}
                         &nbsp;day(s)
                     </div>
@@ -80,7 +80,13 @@ const Card = (props) => {
                 </div>
                 <div className="Card__item__footer">
                     {props.product.inStock !== 0
-                        ? <div className="Card__item__footer--btn">Add to Cart</div>
+                        ? <div
+                            className="Card__item__footer--btn"
+                            onClick={()=>{
+                                props.addToCart(props.product);
+                            }}
+                        >Add to Cart
+                    </div>
                         : null
                     }
 

@@ -19,6 +19,15 @@
     text-transform: uppercase;
     font-size: 1.2rem;
   }
+  &__cart{
+    border: 3px double black;
+    margin-left:5px;
+    border-radius: 50%;
+    padding: 0 5px;
+    background-color: #ddd;
+    color: #111;
+  }
+
 }
 
 .active {

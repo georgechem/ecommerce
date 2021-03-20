@@ -17,6 +17,9 @@ const Nav = (props) => {
         }
     }
 
+    const quantityInCart = (props.userCart.items !== 'undefined'
+    ? props.userCart.items.length : 0);
+
     return (
         <>
             <nav className="Navigation">
@@ -26,7 +29,10 @@ const Nav = (props) => {
                     <i className="fas fa-bars"/>
                 </div>
             <NavLink className="Navigation__link" to="/" exact>home</NavLink>
-            <NavLink className="Navigation__link" to="/cart">cart</NavLink>
+            <NavLink
+                className="Navigation__link" to="/cart">cart
+                <span className="Navigation__cart">{quantityInCart}</span>
+            </NavLink>
                 {props.isLogged
                 ? <NavLink className="Navigation__link" to="/logout">logout</NavLink>
                 : <NavLink className="Navigation__link" to="/login">login</NavLink>}
