@@ -1,0 +1,12 @@
+.SubMenu {
+  background-color: #333;
+  &__list{
+    border-top: 1px double #000;
+  }
+  &__item{
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    color: #ddd;
+  }
+}

@@ -1,9 +1,15 @@
 import React from 'react';
 
+import './SubMenu.scss';
+
 const SubMenu = (props) => {
     return (
         <>
-            <div>SubMenu</div>
+            <div className="SubMenu">
+                <ul className="SubMenu__list">
+                    <li className="SubMenu__item">All Products</li>
+                </ul>
+            </div>
         </>
     );
 }
