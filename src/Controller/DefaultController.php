@@ -83,7 +83,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/camera02.jpg',
+                'img'=>'/images/camera02a.jpg',
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
@@ -283,7 +283,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/mic01.jpg',
+                'img'=>'/images/mic01b.jpg',
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
