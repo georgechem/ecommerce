@@ -76,7 +76,13 @@ const Card = (props) => {
                         &nbsp;{props.product.deliveryIn}
                         &nbsp;day(s)
                     </div>
+
                 </div>
+                <div className="Card__item__footer">
+                    <div className="Card__item__footer--btn">Add to Cart</div>
+                    <div className="Card__item__footer--btn">detail</div>
+                </div>
+
             </div>
     );
 }

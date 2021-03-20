@@ -17,6 +17,9 @@ import './styles/myStyles.scss';
 const MyApp = (props) => {
     const [isLogged, setIsLogged] = useState(false);
     const [allProducts, setAllProducts] = useState(null);
+    const [userCart, setUserCart] = useState({
+        items: []
+    });
 
     useEffect(()=>{
         fetch(url_authorize, fetchGetConfig())

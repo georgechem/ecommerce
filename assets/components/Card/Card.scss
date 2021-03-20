@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: start;
   font-family: sans-serif;
   &__item{
     position: relative;
@@ -52,6 +53,18 @@
       &--box{
         border: 1px solid black;
         margin: 5px;
+      }
+    }
+    &__footer{
+      display: flex;
+      justify-content: space-between;
+      &--btn{
+        cursor: pointer;
+        border: 1px solid #333;
+        margin: 10px 0 0 0;
+        padding: 10px;
+        color: white;
+        background-color: #42889d;
       }
     }
 
