@@ -69,9 +69,18 @@ class UserService
             ->withSecure(true)
         );
 
-
         return true;
 
+    }
+
+    public function logoutUser($response)
+    {
+        $response->headers->setCookie(
+            Cookie::create('token')
+            ->withValue('')
+            ->withExpires(time())
+            ->withSecure(true)
+        );
     }
 
     private function getToken(Request $request)

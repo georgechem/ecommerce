@@ -445,6 +445,20 @@ class DefaultController extends AbstractController
     }
 
     /**
+     * @Route("/api/logout", name="api_logout", methods={"GET"})
+     */
+    public function logoutUser(UserService $userService)
+    {
+        $response = new JsonResponse([
+            'status'=>'logged-out'
+        ]);
+
+        $userService->logoutUser($response);
+
+        return $response;
+    }
+
+    /**
      * @Route("/api/login", name="api_login", methods={"POST"})
      */
     public function generateToken(Request $request, UserService $userService):Response

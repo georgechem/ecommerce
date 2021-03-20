@@ -82,7 +82,7 @@ const Login = (props) => {
                 {error}
             <div className={'LoginForm'}>
                 <p>
-                    <em>email: username@example.com,</em>
+                    <em>email: user@example.com,</em>
                 </p>
                 <p
                     style={{
