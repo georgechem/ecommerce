@@ -21,7 +21,9 @@ const Home = (props) => {
     return (
         <>
             <div className="Home">
-                {cards}
+                <div className="Card">
+                    {cards}
+                </div>
             </div>
         </>
     );
