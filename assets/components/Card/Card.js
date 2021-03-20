@@ -62,15 +62,13 @@ const Card = (props) => {
                     </div>
                     <div className="Card__item__color">
                         colors:&nbsp;
-                        {props.product.colors.map(color=>{
-                            return (<span
+                        {props.product.colors.map((color,key)=>{
+                            return (<span key={'color'+key}
                                 style={{backgroundColor: color}}
                                 className="Card__item__color--box">
                                 &nbsp;&nbsp;&nbsp;&nbsp;
                             </span>);
                         })}
-
-
 
                     </div>
                     <div className="Card__item__">{props.product.deliveryIn}</div>

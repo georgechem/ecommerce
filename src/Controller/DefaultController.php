@@ -36,9 +36,9 @@ class DefaultController extends AbstractController
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
-                    '#000',
+                    '#0a0',
                     '#f00',
-                    '#0f0',
+                    '#af0',
                     '#00f',
                     '#fff'
                 ],
@@ -57,10 +57,10 @@ class DefaultController extends AbstractController
                 'category'=>'electronics',
                 'colors'=>[
                     '#000',
-                    '#f00',
+                    '#f0a',
                     '#0f0',
                     '#00f',
-                    '#fff'
+                    '#faf'
                 ],
                 'deliveryIn'=>rand(1, 7),
                 'img'=>'/images/camera01.jpg',
@@ -98,7 +98,7 @@ class DefaultController extends AbstractController
                 'colors'=>[
                     '#000',
                     '#f00',
-                    '#0f0',
+                    '#5f0',
                     '#00f',
                     '#fff'
                 ],
@@ -117,7 +117,7 @@ class DefaultController extends AbstractController
                 'category'=>'electronics',
                 'colors'=>[
                     '#000',
-                    '#f00',
+                    '#f05',
                     '#0f0',
                     '#00f',
                     '#fff'
@@ -138,7 +138,7 @@ class DefaultController extends AbstractController
                 'colors'=>[
                     '#000',
                     '#f00',
-                    '#0f0',
+                    '#8f0',
                     '#00f',
                     '#fff'
                 ],
@@ -159,7 +159,7 @@ class DefaultController extends AbstractController
                     '#000',
                     '#f00',
                     '#0f0',
-                    '#00f',
+                    '#16f',
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
@@ -177,7 +177,7 @@ class DefaultController extends AbstractController
                 'category'=>'electronics',
                 'colors'=>[
                     '#000',
-                    '#f00',
+                    '#f30',
                     '#0f0',
                     '#00f',
                     '#fff'
