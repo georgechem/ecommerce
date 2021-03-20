@@ -79,8 +79,12 @@ const Card = (props) => {
 
                 </div>
                 <div className="Card__item__footer">
-                    <div className="Card__item__footer--btn">Add to Cart</div>
-                    <div className="Card__item__footer--btn">detail</div>
+                    {props.product.inStock !== 0
+                        ? <div className="Card__item__footer--btn">Add to Cart</div>
+                        : null
+                    }
+
+                    <div className="Card__item__footer--btn">Details</div>
                 </div>
 
             </div>

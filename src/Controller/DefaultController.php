@@ -32,7 +32,7 @@ class DefaultController extends AbstractController
                 'name'=>'camera',
                 'price'=>rand(100, 10000)/100,
                 'inStock'=> rand(0, 15),
-                'rating'=>rand(0,5),
+                'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
@@ -52,7 +52,7 @@ class DefaultController extends AbstractController
                 'name'=>'camera',
                 'price'=>rand(100, 10000)/100,
                 'inStock'=> rand(0, 15),
-                'rating'=>rand(0,5),
+                'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
@@ -72,7 +72,7 @@ class DefaultController extends AbstractController
                 'name'=>'camera',
                 'price'=>rand(100, 10000)/100,
                 'inStock'=> rand(0, 15),
-                'rating'=>rand(0,5),
+                'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
@@ -92,7 +92,7 @@ class DefaultController extends AbstractController
                 'name'=>'Processor',
                 'price'=>rand(100, 10000)/100,
                 'inStock'=> rand(0, 15),
-                'rating'=>rand(0,5),
+                'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
@@ -112,7 +112,7 @@ class DefaultController extends AbstractController
                 'name'=>'Processor',
                 'price'=>rand(100, 10000)/100,
                 'inStock'=> rand(0, 15),
-                'rating'=>rand(0,5),
+                'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
@@ -132,7 +132,7 @@ class DefaultController extends AbstractController
                 'name'=>'Flashlight',
                 'price'=>rand(100, 10000)/100,
                 'inStock'=> rand(0, 15),
-                'rating'=>rand(0,5),
+                'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
@@ -152,7 +152,7 @@ class DefaultController extends AbstractController
                 'name'=>'Headphones',
                 'price'=>rand(100, 10000)/100,
                 'inStock'=> rand(0, 15),
-                'rating'=>rand(0,5),
+                'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
@@ -172,7 +172,7 @@ class DefaultController extends AbstractController
                 'name'=>'Ipad',
                 'price'=>rand(100, 10000)/100,
                 'inStock'=> rand(0, 15),
-                'rating'=>rand(0,5),
+                'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
@@ -192,7 +192,7 @@ class DefaultController extends AbstractController
                 'name'=>'Jackplug',
                 'price'=>rand(100, 10000)/100,
                 'inStock'=> rand(0, 15),
-                'rating'=>rand(0,5),
+                'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
@@ -212,7 +212,7 @@ class DefaultController extends AbstractController
                 'name'=>'Keyboard',
                 'price'=>rand(100, 10000)/100,
                 'inStock'=> rand(0, 15),
-                'rating'=>rand(0,5),
+                'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
@@ -232,7 +232,7 @@ class DefaultController extends AbstractController
                 'name'=>'Memory',
                 'price'=>rand(100, 10000)/100,
                 'inStock'=> rand(0, 15),
-                'rating'=>rand(0,5),
+                'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
@@ -252,7 +252,7 @@ class DefaultController extends AbstractController
                 'name'=>'Memory',
                 'price'=>rand(100, 10000)/100,
                 'inStock'=> rand(0, 15),
-                'rating'=>rand(0,5),
+                'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
@@ -272,7 +272,7 @@ class DefaultController extends AbstractController
                 'name'=>'Microphone',
                 'price'=>rand(100, 10000)/100,
                 'inStock'=> rand(0, 15),
-                'rating'=>rand(0,5),
+                'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
@@ -292,7 +292,7 @@ class DefaultController extends AbstractController
                 'name'=>'Mouse',
                 'price'=>rand(100, 10000)/100,
                 'inStock'=> rand(0, 15),
-                'rating'=>rand(0,5),
+                'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
@@ -312,7 +312,7 @@ class DefaultController extends AbstractController
                 'name'=>'Mouse',
                 'price'=>rand(100, 10000)/100,
                 'inStock'=> rand(0, 15),
-                'rating'=>rand(0,5),
+                'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
@@ -332,7 +332,7 @@ class DefaultController extends AbstractController
                 'name'=>'MP3 Player',
                 'price'=>rand(100, 10000)/100,
                 'inStock'=> rand(0, 15),
-                'rating'=>rand(0,5),
+                'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
@@ -352,7 +352,7 @@ class DefaultController extends AbstractController
                 'name'=>'Multimeter',
                 'price'=>rand(100, 10000)/100,
                 'inStock'=> rand(0, 15),
-                'rating'=>rand(0,5),
+                'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
@@ -372,7 +372,7 @@ class DefaultController extends AbstractController
                 'name'=>'Notebook',
                 'price'=>rand(100, 10000)/100,
                 'inStock'=> rand(0, 15),
-                'rating'=>rand(0,5),
+                'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
@@ -392,7 +392,7 @@ class DefaultController extends AbstractController
                 'name'=>'Record Player',
                 'price'=>rand(100, 10000)/100,
                 'inStock'=> rand(0, 15),
-                'rating'=>rand(0,5),
+                'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
@@ -412,7 +412,7 @@ class DefaultController extends AbstractController
                 'name'=>'Retro TV',
                 'price'=>rand(100, 10000)/100,
                 'inStock'=> rand(0, 15),
-                'rating'=>rand(0,5),
+                'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
@@ -432,7 +432,7 @@ class DefaultController extends AbstractController
                 'name'=>'Speaker',
                 'price'=>rand(100, 10000)/100,
                 'inStock'=> rand(0, 9),
-                'rating'=>rand(0,5),
+                'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
                 'colors'=>[
