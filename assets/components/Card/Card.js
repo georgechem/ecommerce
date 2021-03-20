@@ -9,9 +9,13 @@ const Card = (props) => {
     const halfStar = <i className="fas fa-star-half-alt"/>;
     const emptyStar = <i className="far fa-star"/>;
 
-    const inStock = (props.product.inStock >= 5 ? <span>In Stock</span> :
-        props.product.inStock >=1 ? <span>Ending</span> : props.product.inStock === 0
-    ? <span>Out of Stock</span> : '');
+    const inStock = (props.product.inStock >= 5
+        ? <span style={{color: 'green'}}>In Stock</span>
+        : props.product.inStock >=1
+            ? <span style={{color: '#96541c'}}>Ending</span>
+            : props.product.inStock === 0
+                ? <span style={{color: 'red'}}>Out of Stock</span>
+                : '');
 
     return (
             <div className="Card__item">
@@ -49,13 +53,12 @@ const Card = (props) => {
                                     ? halfStar : emptyStar}
                         </span>
                         <span className="Card__item__rating">
-                            from
+                            from&nbsp;
                             {props.product.numRating}
                             &nbsp;reviews
                         </span>
 
                     </div>
-                    <div className="Card__item__">{props.product.numRating}</div>
                     <div className="Card__item__">{props.product.colors}</div>
                     <div className="Card__item__">{props.product.deliveryIn}</div>
                 </div>
