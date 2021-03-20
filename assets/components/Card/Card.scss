@@ -29,7 +29,16 @@
       font-weight: bolder;
     }
     &__star{
+      text-align: center;
       color: orangered;
+    }
+    &__stock{
+      text-align: center;
+      margin: 10px 0;
+    }
+    &__rating{
+      margin-left: 5px;
+      color: black
     }
 
   }

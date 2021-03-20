@@ -431,7 +431,7 @@ class DefaultController extends AbstractController
                 'id'=>21,
                 'name'=>'Speaker',
                 'price'=>rand(100, 10000)/100,
-                'inStock'=> rand(0, 15),
+                'inStock'=> rand(0, 9),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
