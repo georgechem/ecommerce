@@ -9,13 +9,14 @@ import Login from './components/Login/Login';
 import Logout from './components/Logout/Logout';
 import Footer from './components/Footer/Footer';
 
-import {url_authorize} from "./config";
+import {url_authorize, url_getAllProducts} from "./config";
 import {fetchGetConfig} from "./config";
 
 import './styles/myStyles.scss';
 
 const MyApp = (props) => {
     const [isLogged, setIsLogged] = useState(false);
+    const [allProducts, setAllProducts] = useState(null);
 
     useEffect(()=>{
         fetch(url_authorize, fetchGetConfig())
@@ -32,12 +33,26 @@ const MyApp = (props) => {
             })
 
     },[]);
+    useEffect(()=>{
+        fetch(url_getAllProducts, fetchGetConfig)
+            .then(res=>res.json())
+            .then(result=>{
+                setAllProducts(result);
+            })
+            .catch(err=>{
+                console.log(err);
+            })
+    },[]);
 
     return (
         <Router>
             <>
                 <Nav isLogged={isLogged}/>
-                <Route path="/" component={Home} exact/>
+                <Route path="/"
+                       render={()=>{
+                           return <Home allProducts={allProducts}/>
+                       }}
+                       exact/>
                 <Route path="/cart" component={Cart}/>
                 <Route path="/login"
                        render={()=>{
