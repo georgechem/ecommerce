@@ -20,7 +20,6 @@ const MyApp = (props) => {
         fetch(url_authorize, fetchGetConfig())
             .then(res=>res.json())
             .then(result=>{
-                console.log(result);
                 if(result.auth === true){
                     setIsLogged(true);
                 }else{

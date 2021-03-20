@@ -12,7 +12,6 @@ const Logout = (props) => {
                 if(result.status === 'logged-out')
                 {
                     props.setIsLogged(false);
-                    console.log(result);
                 }
 
             })
