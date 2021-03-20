@@ -34,6 +34,7 @@ class DefaultController extends AbstractController
                 'inStock'=> rand(0, 15),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
+                'category'=>'electronics',
                 'colors'=>[
                     '#000',
                     '#f00',
@@ -53,6 +54,7 @@ class DefaultController extends AbstractController
                 'inStock'=> rand(0, 15),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
+                'category'=>'electronics',
                 'colors'=>[
                     '#000',
                     '#f00',
@@ -72,6 +74,7 @@ class DefaultController extends AbstractController
                 'inStock'=> rand(0, 15),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
+                'category'=>'electronics',
                 'colors'=>[
                     '#000',
                     '#f00',
@@ -91,6 +94,7 @@ class DefaultController extends AbstractController
                 'inStock'=> rand(0, 15),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
+                'category'=>'electronics',
                 'colors'=>[
                     '#000',
                     '#f00',
@@ -110,6 +114,7 @@ class DefaultController extends AbstractController
                 'inStock'=> rand(0, 15),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
+                'category'=>'electronics',
                 'colors'=>[
                     '#000',
                     '#f00',
@@ -129,6 +134,7 @@ class DefaultController extends AbstractController
                 'inStock'=> rand(0, 15),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
+                'category'=>'electronics',
                 'colors'=>[
                     '#000',
                     '#f00',
@@ -148,6 +154,7 @@ class DefaultController extends AbstractController
                 'inStock'=> rand(0, 15),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
+                'category'=>'electronics',
                 'colors'=>[
                     '#000',
                     '#f00',
@@ -167,6 +174,7 @@ class DefaultController extends AbstractController
                 'inStock'=> rand(0, 15),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
+                'category'=>'electronics',
                 'colors'=>[
                     '#000',
                     '#f00',
@@ -186,6 +194,7 @@ class DefaultController extends AbstractController
                 'inStock'=> rand(0, 15),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
+                'category'=>'electronics',
                 'colors'=>[
                     '#000',
                     '#f00',
@@ -205,6 +214,7 @@ class DefaultController extends AbstractController
                 'inStock'=> rand(0, 15),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
+                'category'=>'electronics',
                 'colors'=>[
                     '#000',
                     '#f00',
@@ -224,6 +234,7 @@ class DefaultController extends AbstractController
                 'inStock'=> rand(0, 15),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
+                'category'=>'electronics',
                 'colors'=>[
                     '#000',
                     '#f00',
@@ -243,6 +254,7 @@ class DefaultController extends AbstractController
                 'inStock'=> rand(0, 15),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
+                'category'=>'electronics',
                 'colors'=>[
                     '#000',
                     '#f00',
@@ -262,6 +274,7 @@ class DefaultController extends AbstractController
                 'inStock'=> rand(0, 15),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
+                'category'=>'electronics',
                 'colors'=>[
                     '#000',
                     '#f00',
@@ -281,6 +294,7 @@ class DefaultController extends AbstractController
                 'inStock'=> rand(0, 15),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
+                'category'=>'electronics',
                 'colors'=>[
                     '#000',
                     '#f00',
@@ -300,6 +314,7 @@ class DefaultController extends AbstractController
                 'inStock'=> rand(0, 15),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
+                'category'=>'electronics',
                 'colors'=>[
                     '#000',
                     '#f00',
@@ -319,6 +334,7 @@ class DefaultController extends AbstractController
                 'inStock'=> rand(0, 15),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
+                'category'=>'electronics',
                 'colors'=>[
                     '#000',
                     '#f00',
@@ -338,6 +354,7 @@ class DefaultController extends AbstractController
                 'inStock'=> rand(0, 15),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
+                'category'=>'electronics',
                 'colors'=>[
                     '#000',
                     '#f00',
@@ -357,6 +374,7 @@ class DefaultController extends AbstractController
                 'inStock'=> rand(0, 15),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
+                'category'=>'electronics',
                 'colors'=>[
                     '#000',
                     '#f00',
@@ -376,6 +394,7 @@ class DefaultController extends AbstractController
                 'inStock'=> rand(0, 15),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
+                'category'=>'electronics',
                 'colors'=>[
                     '#000',
                     '#f00',
@@ -395,6 +414,7 @@ class DefaultController extends AbstractController
                 'inStock'=> rand(0, 15),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
+                'category'=>'electronics',
                 'colors'=>[
                     '#000',
                     '#f00',
@@ -414,6 +434,7 @@ class DefaultController extends AbstractController
                 'inStock'=> rand(0, 15),
                 'rating'=>rand(0,5),
                 'numRating'=>rand(10, 200),
+                'category'=>'electronics',
                 'colors'=>[
                     '#000',
                     '#f00',
