@@ -10,11 +10,11 @@ const CartItem = (props) => {
     return (
         <div className="CartItem">
             <div className="CartItem__Box">
-                <input type="submit" value="X"/>
-                <img src="" alt="product thumbnail"/>
-                <div>{props.product.name}</div>
-                <div>{props.product.price}</div>
-                <div>{props.product.amount}</div>
+                <input className="CartItem__btn--remove" type="submit" value="X"/>
+                <img className="CartItem__img" src={props.product.img} alt="product thumbnail"/>
+                <div className="CartItem__name">{props.product.name}</div>
+                <div className="CartItem__price">EUR: {props.product.price}</div>
+                <div className="CartItem__amount">Qt: {props.product.amount}</div>
             </div>
         </div>
     );

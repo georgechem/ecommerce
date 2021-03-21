@@ -22,7 +22,7 @@ const Cart = (props) => {
 
     return (
         <div className="CartContainer">
-            {inCart}
+            {inCart !== null ? inCart : null}
         </div>
     );
 }
