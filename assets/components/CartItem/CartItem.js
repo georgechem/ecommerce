@@ -21,6 +21,7 @@ const CartItem = (props) => {
                     type="submit"
                     value="X"
                 />
+                {props.product.inStock > 0 ?
                 <input
                     onClick={()=>{
                         props.addQuantity(props.product.id);
@@ -28,7 +29,7 @@ const CartItem = (props) => {
                     className="CartItem__btn--edit"
                     type="submit"
                     value="+"
-                />
+                /> : null}
                 <input
                     onClick={()=>{
                         props.minusQuantity(props.product.id);

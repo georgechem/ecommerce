@@ -20,6 +20,20 @@ const MyApp = (props) => {
     const [userCart, setUserCart] = useState({
         items: []
     });
+
+    // DRY VIOLATION - NEED REFACTORING
+    const updateStock = (id, value)=>{
+        const newStock = [];
+        allProducts.forEach(product=>{
+            if(product.id === id){
+                product.inStock += value;
+            }
+            newStock.push(product);
+        });
+        setAllProducts(newStock);
+
+    }
+
     const addToCart = (product)=>{
         const cart = userCart.items;
 
@@ -37,6 +51,9 @@ const MyApp = (props) => {
                 items: cart
             });
         }
+
+        // updateStock
+        updateStock(product.id, -1);
 
     }
 
@@ -94,6 +111,8 @@ const MyApp = (props) => {
                            return (<Cart
                                userCart={userCart}
                                setUserCart={setUserCart}
+                               allProducts={allProducts}
+                               setAllProducts={setAllProducts}
                            />);
                        }}
                 />

@@ -4,8 +4,12 @@ import CartItem from "../CartItem/CartItem";
 
 import './Cart.scss';
 /* FROM MyApp
+/------------
 props.userCart
 props.setUserCart
+/--------------
+props.allProducts
+props.setAllProducts
  */
 const Cart = (props) => {
     const [inCart, setInCart] = useState(null);
@@ -21,14 +25,33 @@ const Cart = (props) => {
 
         return total.toFixed(2);
     }
+    // DRY VIOLATION - NEED REFACTORING
+    const updateStock = (id, value)=>{
+        const newStock = [];
+        props.allProducts.forEach(product=>{
+            if(product.id === id){
+                product.inStock += value;
+            }
+            newStock.push(product);
+        });
+        props.setAllProducts(newStock);
+
+    }
 
     const removeAll = (id) =>{
+        let productQtInCart = 0;
         const newCart = props.userCart.items.filter(item=>{
+            if(item.id === id){
+                productQtInCart = item.amount;
+            }
             return item.id !== id;
         });
         props.setUserCart({
             items: newCart
-        })
+        });
+        // Update Stock
+        updateStock(id,productQtInCart);
+
     }
 
     const addQuantity = (id) => {
@@ -44,6 +67,9 @@ const Cart = (props) => {
         props.setUserCart({
             items: newCart
         });
+        // Update Stock
+        updateStock(id,-1);
+
     }
 
     const minusQuantity = (id) => {
@@ -60,6 +86,8 @@ const Cart = (props) => {
         props.setUserCart({
             items: newCart
         });
+        // Update Stock
+        updateStock(id,1);
     }
 
     const emptyCart= (
