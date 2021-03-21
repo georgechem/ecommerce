@@ -11,6 +11,7 @@ const CartItem = (props) => {
         <div className="CartItem">
             <div className="CartItem__Box">
                 <div>btnRemove</div>
+                <div>sm. img</div>
                 <div>pr. name</div>
                 <div>pr.price</div>
                 <div>pr. quantity</div>
