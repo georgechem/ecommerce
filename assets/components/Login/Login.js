@@ -2,7 +2,7 @@ import React from 'react';
 import {useState, useEffect} from 'react';
 import {useHistory} from 'react-router-dom';
 
-import {url_login} from "../../config";
+import {url_login, ex_path} from "../../config";
 import {fetchPostConfig} from "../../config";
 
 
@@ -51,7 +51,7 @@ const Login = (props) => {
             .then(result=>{
                 if(result.status === 'success'){
                     props.setIsLogged(true);
-                    history.push("/");
+                    history.push(ex_path+"/");
                 }else{
                     setError(
                         <div

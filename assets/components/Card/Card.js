@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {useState, useEffect} from 'react';
-
+import {ex_path} from "../../config";
 import './Card.scss';
 
 const Card = (props) => {
@@ -97,7 +97,7 @@ const Card = (props) => {
                                 props.setCurrentProduct(props.product);
                             }}
                             className="Card__item__footer--btn--link"
-                            to="/product">
+                            to={ex_path+"/product"}>
                             Details
                         </Link>
                     </div>
