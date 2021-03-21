@@ -13,7 +13,9 @@ const Cart = (props) => {
     useEffect(() => {
         const itemsInCart = [];
         props.userCart.items.forEach((product, key)=>{
-            itemsInCart.push(<CartItem key={'cartProduct'+key} product={product}/>);
+            itemsInCart.push(<CartItem
+                key={'cartProduct'+key}
+                product={product}/>);
         })
         setInCart(itemsInCart);
     },[]);

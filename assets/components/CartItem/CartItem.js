@@ -3,8 +3,7 @@ import {useState, useEffect} from 'react';
 
 import './CartItem.scss';
 /* FROM Cart
-props.userCart
-props.setUserCart
+props.product
  */
 const CartItem = (props) => {
 
@@ -13,9 +12,9 @@ const CartItem = (props) => {
             <div className="CartItem__Box">
                 <input type="submit" value="X"/>
                 <img src="" alt="product thumbnail"/>
-                <div>props.</div>
-                <div>pr.price</div>
-                <div>pr. quantity</div>
+                <div>{props.product.name}</div>
+                <div>{props.product.price}</div>
+                <div>{props.product.amount}</div>
             </div>
         </div>
     );

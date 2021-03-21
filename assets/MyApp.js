@@ -22,13 +22,6 @@ const MyApp = (props) => {
     });
     const addToCart = (product)=>{
         const cart = userCart.items;
-        // only if amount 0 change to 1
-        // first item of that type in cart
-        cart.forEach((item, idx)=>{
-            if(item.amount === 0){
-                cart[idx].amount = 1;
-            }
-        });
 
         // check is duplicate
         const idx = cart.findIndex((item)=>{
@@ -71,7 +64,7 @@ const MyApp = (props) => {
                 const transformedResult = [];
                 // Add property to original product
                 result.map((product)=>{
-                    product.amount = 0;
+                    product.amount = 1;
                     transformedResult.push(product);
                 });
                 setAllProducts(transformedResult);
