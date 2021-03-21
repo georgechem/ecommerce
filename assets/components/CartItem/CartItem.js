@@ -18,6 +18,11 @@ const CartItem = (props) => {
                     type="submit"
                     value="X"
                 />
+                <input
+                    className="CartItem__btn--edit"
+                    type="submit"
+                    value="edit"
+                />
                 <img className="CartItem__img" src={props.product.img} alt="product thumbnail"/>
                 <div className="CartItem__name"><em>{props.product.name}</em></div>
                 <div className="CartItem__price">EUR: {props.product.price}</div>

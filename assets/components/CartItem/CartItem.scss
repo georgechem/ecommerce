@@ -16,11 +16,17 @@
   &__btn{
     &--remove{
       cursor: pointer;
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       border-radius: 50%;
       outline: none;
       padding: 0 4px;
     }
+    &--edit{
+      font-size: 1.1;
+      padding: 2px 5px;
+      text-transform: uppercase;
+    }
+
   }
   &__img{
     width: 48px;
