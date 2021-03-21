@@ -93,8 +93,13 @@ const Card = (props) => {
 
                     <div className="Card__item__footer--btn">
                         <Link
+                            onClick={()=>{
+                                props.setCurrentProduct(props.product);
+                            }}
                             className="Card__item__footer--btn--link"
-                            to="/product">Details</Link>
+                            to="/product">
+                            Details
+                        </Link>
                     </div>
                 </div>
 

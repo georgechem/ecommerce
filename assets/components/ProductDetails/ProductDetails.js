@@ -6,7 +6,7 @@ import {useState, useEffect} from 'react';
 const ProductDetails = (props) => {
     return (
         <>
-            <div>ProductDetails</div>
+            <div>ProductDetails{console.log(props.currentProduct)}</div>
         </>
     );
 }

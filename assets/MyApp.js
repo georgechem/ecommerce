@@ -25,6 +25,8 @@ const MyApp = (props) => {
     const [inCart, setInCart] = useState(null);
     const [isCart, setIsCart] = useState(false);
 
+    const [currentProduct, setCurrentProduct] = useState(null);
+
     // DRY VIOLATION - NEED REFACTORING
     const updateStock = (id, value)=>{
         const newStock = [];
@@ -109,6 +111,7 @@ const MyApp = (props) => {
                            return (<Home
                                allProducts={allProducts}
                                addToCart={addToCart}
+                               setCurrentProduct={setCurrentProduct}
                            />);
                        }}
                        exact/>
@@ -129,7 +132,7 @@ const MyApp = (props) => {
                 <Route path="/product"
                        render={()=>{
                            return (<ProductDetails
-
+                                currentProduct={currentProduct}
                                />
                            );
                        }}

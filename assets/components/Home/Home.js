@@ -15,7 +15,9 @@ const Home = (props) => {
                 allProductsList.push(<Card
                     addToCart={props.addToCart}
                     key={product.id}
-                    product={product}/>);
+                    product={product}
+                    setCurrentProduct={props.setCurrentProduct}
+                />);
             });
             setCards(allProductsList);
         }

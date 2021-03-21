@@ -78,10 +78,15 @@ const Cart = (props) => {
     }
 
     const minusQuantity = (id) => {
+        let deduct = 1;
         const newCart = props.userCart.items.map(item=>{
             if(item.id === id){
                 item.amount--;
+                if(item.amount < 1){
+                    deduct = 0;
+                }
                 item.amount < 1 ? item.amount = 1 : item.amount;
+
                 return item;
 
             }else{
@@ -92,7 +97,7 @@ const Cart = (props) => {
             items: newCart
         });
         // Update Stock
-        updateStock(id,1);
+        updateStock(id,deduct);
     }
 
     const emptyCart= (
