@@ -8,17 +8,19 @@ props.userCart
 props.setUserCart
  */
 const Cart = (props) => {
+    const [inCart, setInCart] = useState(null);
+
+    useEffect(() => {
+        const itemsInCart = [];
+        props.userCart.items.forEach((product, key)=>{
+            itemsInCart.push(<CartItem key={'cartProduct'+key} product={product}/>);
+        })
+        setInCart(itemsInCart);
+    },[]);
 
     return (
         <div className="CartContainer">
-            <CartItem
-            userCart={props.userCart}
-            setUserCart={props.setUserCart}
-            />
-            <CartItem
-                userCart={props.userCart}
-                setUserCart={props.setUserCart}
-            />
+            {inCart}
         </div>
     );
 }
