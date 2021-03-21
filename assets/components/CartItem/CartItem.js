@@ -2,7 +2,10 @@ import React from 'react';
 import {useState, useEffect} from 'react';
 
 import './CartItem.scss';
-
+/* FROM Cart
+props.userCart
+props.setUserCart
+ */
 const CartItem = (props) => {
     return (
         <div className="CartItem">
