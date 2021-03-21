@@ -2,7 +2,8 @@
 Configuration file
  */
 
-const prefix = '/ecommerce/public';
+const prefix = '/ecommerce/public/index.php';
+//const prefix = '';
 
 export const url_login = prefix + '/api/login';
 
