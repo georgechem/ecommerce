@@ -25,8 +25,8 @@ class DefaultController extends AbstractController
      */
     public function getUsers():JsonResponse
     {
-        $path = "/ecommerce/public";
-        //$path = "";
+        //$path = "/ecommerce/public";
+        $path = "";
 
         $products = [
             [
