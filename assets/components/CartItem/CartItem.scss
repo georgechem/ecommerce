@@ -1,0 +1,8 @@
+.CartItem {
+  border: 1px solid black;
+  &__Box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
