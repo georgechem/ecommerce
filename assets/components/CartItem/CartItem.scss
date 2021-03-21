@@ -25,7 +25,11 @@
     width: 48px;
   }
   &__name{
-
+    text-transform: capitalize;
+  }
+  &__price{
+    font-size: 0.8rem;
+    font-weight: bolder;
   }
 
 }
