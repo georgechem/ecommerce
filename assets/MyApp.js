@@ -34,7 +34,6 @@ const MyApp = (props) => {
             newStock.push(product);
         });
         setAllProducts(newStock);
-
     }
 
     const addToCart = (product)=>{

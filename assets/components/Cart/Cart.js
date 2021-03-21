@@ -47,6 +47,7 @@ const Cart = (props) => {
         const newCart = props.userCart.items.filter(item=>{
             if(item.id === id){
                 productQtInCart = item.amount;
+                item.amount = 1;
             }
             return item.id !== id;
         });
