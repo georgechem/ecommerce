@@ -9,6 +9,7 @@ props.setUserCart
  */
 const Cart = (props) => {
     const [inCart, setInCart] = useState(null);
+    const [isCart, setIsCart] = useState(false);
 
     const getTotal = () => {
         let total = 0.0;
@@ -29,16 +30,23 @@ const Cart = (props) => {
                 product={product}/>);
         })
         setInCart(itemsInCart);
+        if(itemsInCart.length !== 0){
+            setIsCart(true);
+        }else{
+            setIsCart(false);
+        }
+
     },[]);
 
     return (
         <div className="CartContainer">
             {inCart !== null ? inCart : null}
-            <div className="Total">
+            {isCart === false ? null : (<div className="Total">
                 <div className="Total__total">Total</div>
                 <div className="Total__price">EUR: {getTotal()}</div>
-            </div>
+            </div>)}
         </div>
+
     );
 }
 export default Cart;
