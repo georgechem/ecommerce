@@ -107,7 +107,7 @@ const MyApp = (props) => {
                     isLogged={isLogged}
                     userCart={userCart}
                 />
-                <Route path={ex_path}
+                <Route path={ex_path+"/"}
                        render={()=>{
                            return (<Home
                                allProducts={allProducts}

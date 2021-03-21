@@ -5,6 +5,7 @@ Configuration file
 const prefix = '/ecommerce/public/index.php';
 //const prefix = '';
 export const ex_path = '/ecommerce/public/index.php';
+//export const ex_path = '';
 
 export const url_login = prefix + '/api/login';
 
