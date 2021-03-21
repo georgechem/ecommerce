@@ -62,6 +62,10 @@ const Cart = (props) => {
         });
     }
 
+    const emptyCart= (
+        <div className="EmptyCart">Your cart is empty</div>
+    );
+
 
     useEffect(() => {
         const itemsInCart = [];
@@ -86,7 +90,7 @@ const Cart = (props) => {
     return (
         <div className="CartContainer">
             {inCart !== null ? inCart : null}
-            {isCart === false ? null : (<div className="Total">
+            {isCart === false ? emptyCart : (<div className="Total">
                 <div className="Total__total">Total</div>
                 <div className="Total__price">EUR: {getTotal()}</div>
             </div>)}
