@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-
+import {ex_path} from "../../config";
 import {useState, useEffect} from 'react';
 
 import './ProductDetails.scss';
@@ -50,7 +50,7 @@ const ProductDetails = (props) => {
             </div>) : <div className="Error">Refresh not supported</div>}
 
             <div className="Link">
-                <Link className="Link__home" to="/">Home</Link>
+                <Link className="Link__home" to={ex_path+"/"}>Home</Link>
             </div>
 
         </>
