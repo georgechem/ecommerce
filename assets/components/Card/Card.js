@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import {useState, useEffect} from 'react';
 
 import './Card.scss';
@@ -90,7 +91,11 @@ const Card = (props) => {
                         : null
                     }
 
-                    <div className="Card__item__footer--btn">Details</div>
+                    <div className="Card__item__footer--btn">
+                        <Link
+                            className="Card__item__footer--btn--link"
+                            to="/product">Details</Link>
+                    </div>
                 </div>
 
             </div>

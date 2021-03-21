@@ -8,6 +8,7 @@ import Cart from './components/Cart/Cart';
 import Login from './components/Login/Login';
 import Logout from './components/Logout/Logout';
 import Footer from './components/Footer/Footer';
+import ProductDetails from "./components/ProductDetails/ProductDetails";
 
 import {url_authorize, url_getAllProducts} from "./config";
 import {fetchGetConfig} from "./config";
@@ -123,6 +124,14 @@ const MyApp = (props) => {
                                isCart={isCart}
                                setIsCart={setIsCart}
                            />);
+                       }}
+                />
+                <Route path="/product"
+                       render={()=>{
+                           return (<ProductDetails
+
+                               />
+                           );
                        }}
                 />
                 <Route path="/login"

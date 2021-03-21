@@ -63,8 +63,11 @@
         border: 1px solid #333;
         margin: 10px 0 0 0;
         padding: 10px;
-        color: white;
         background-color: #42889d;
+        &--link{
+          color: #000;
+          text-decoration: none;
+        }
       }
     }
 
