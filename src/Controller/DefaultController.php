@@ -25,6 +25,8 @@ class DefaultController extends AbstractController
      */
     public function getUsers():JsonResponse
     {
+        $path = "/ecommerce/public";
+        //$path = "";
 
         $products = [
             [
@@ -43,7 +45,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/cam0a1.jpg',
+                'img'=>"{$path}/images/cam0a1.jpg",
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
@@ -63,7 +65,7 @@ class DefaultController extends AbstractController
                     '#faf'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/camera01.jpg',
+                'img'=>"{$path}/images/camera01.jpg",
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
@@ -83,7 +85,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/camera02a.jpg',
+                'img'=>"{$path}/images/camera02a.jpg",
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
@@ -103,7 +105,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/cpu01.jpg',
+                'img'=>"{$path}/images/cpu01.jpg",
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
@@ -123,7 +125,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/cpu02.jpg',
+                'img'=>"{$path}/images/cpu02.jpg",
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
@@ -143,7 +145,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/flashlight01.jpg',
+                'img'=>"{$path}/images/flashlight01.jpg",
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
@@ -163,7 +165,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/headphones01.jpg',
+                'img'=>"{$path}/images/headphones01.jpg",
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
@@ -183,7 +185,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/ipad01.jpg',
+                'img'=>"{$path}/images/ipad01.jpg",
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
@@ -203,7 +205,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/jackplug01.jpg',
+                'img'=>"{$path}/images/jackplug01.jpg",
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
@@ -223,7 +225,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/keyboard01.jpg',
+                'img'=>"{$path}/images/keyboard01.jpg",
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
@@ -243,7 +245,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/memory01.jpg',
+                'img'=>"{$path}/images/memory01.jpg",
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
@@ -263,7 +265,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/memory02.jpg',
+                'img'=>"{$path}/images/memory02.jpg",
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
@@ -283,7 +285,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/mic01b.jpg',
+                'img'=>"{$path}/images/mic01b.jpg",
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
@@ -303,7 +305,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/mouse01.jpg',
+                'img'=>"{$path}/images/mouse01.jpg",
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
@@ -323,7 +325,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/mouse02.jpg',
+                'img'=>"{$path}/images/mouse02.jpg",
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
@@ -343,7 +345,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/mp3player01.jpg',
+                'img'=>"{$path}/images/mp3player01.jpg",
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
@@ -363,7 +365,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/multimeter01.jpg',
+                'img'=>"{$path}/images/multimeter01.jpg",
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
@@ -383,7 +385,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/notebook01.jpg',
+                'img'=>"{$path}/images/notebook01.jpg",
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
@@ -403,7 +405,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/recordplayer01.jpg',
+                'img'=>"{$path}/images/recordplayer01.jpg",
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
@@ -423,7 +425,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/retrotv01.jpg',
+                'img'=>"{$path}/images/retrotv01.jpg",
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],
@@ -443,7 +445,7 @@ class DefaultController extends AbstractController
                     '#fff'
                 ],
                 'deliveryIn'=>rand(1, 7),
-                'img'=>'/images/speaker01.jpg',
+                'img'=>"{$path}/images/speaker01.jpg",
                 'description'=>'Praesent sodales vulputate sem, eu porttitor odio aliquet eu. Integer ut sapien a enim commodo tempus et a mauris. Fusce metus erat, faucibus et lobortis a, molestie vitae erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet viverra purus. Nam vitae urna vel libero euismod auctor. Cras sit amet lacus tortor. Suspendisse potenti. Suspendisse potenti. Integer tincidunt accumsan mollis.',
 
             ],

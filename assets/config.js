@@ -2,10 +2,13 @@
 Configuration file
  */
 
-const prefix = '/ecommerce/public/index.php';
+// LOCAL
 //const prefix = '';
-export const ex_path = '/ecommerce/public/index.php';
 //export const ex_path = '';
+
+// REMOTE
+export const ex_path = '/ecommerce/public/index.php';
+const prefix = '/ecommerce/public/index.php';
 
 export const url_login = prefix + '/api/login';
 
