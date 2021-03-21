@@ -22,11 +22,29 @@ const MyApp = (props) => {
     });
     const addToCart = (product)=>{
         const cart = userCart.items;
-        cart.push(product);
-        setUserCart({
-            items: cart
+        // only if amount 0 change to 1
+        // first item of that type in cart
+        cart.forEach((item, idx)=>{
+            if(item.amount === 0){
+                cart[idx].amount = 1;
+            }
         });
-        console.log(userCart);
+
+        // check is duplicate
+        const idx = cart.findIndex((item)=>{
+            return item.id === product.id;
+        });
+        if(idx !== -1){
+            let counter = cart[idx].amount;
+            counter++;
+            cart[idx].amount = counter;
+        }else{
+            cart.push(product);
+            setUserCart({
+                items: cart
+            });
+        }
+
     }
 
     // Authorize User
