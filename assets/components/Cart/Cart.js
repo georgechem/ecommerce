@@ -31,6 +31,36 @@ const Cart = (props) => {
         })
     }
 
+    const addQuantity = (id) => {
+        const newCart = props.userCart.items.map(item=>{
+            if(item.id === id){
+                item.amount++;
+                return item;
+
+            }else{
+                return item;
+            }
+        })
+        props.setUserCart({
+            items: newCart
+        });
+    }
+
+    const minusQuantity = (id) => {
+        const newCart = props.userCart.items.map(item=>{
+            if(item.id === id){
+                item.amount--;
+                item.amount < 1 ? item.amount = 1 : item.amount;
+                return item;
+
+            }else{
+                return item;
+            }
+        })
+        props.setUserCart({
+            items: newCart
+        });
+    }
 
 
     useEffect(() => {
@@ -40,6 +70,8 @@ const Cart = (props) => {
                 key={'cartProduct'+key}
                 product={product}
                 removeAll={removeAll}
+                addQuantity={addQuantity}
+                minusQuantity={minusQuantity}
             />);
         })
         setInCart(itemsInCart);
