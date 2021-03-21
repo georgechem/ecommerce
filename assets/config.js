@@ -2,7 +2,7 @@
 Configuration file
  */
 
-const prefix = '';
+const prefix = '/ecommerce/public';
 
 export const url_login = prefix + '/api/login';
 
