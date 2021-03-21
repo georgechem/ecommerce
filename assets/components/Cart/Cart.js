@@ -22,12 +22,24 @@ const Cart = (props) => {
         return total.toFixed(2);
     }
 
+    const removeAll = (id) =>{
+        const newCart = props.userCart.items.filter(item=>{
+            return item.id !== id;
+        });
+        props.setUserCart({
+            items: newCart
+        })
+    }
+
     useEffect(() => {
         const itemsInCart = [];
         props.userCart.items.forEach((product, key)=>{
             itemsInCart.push(<CartItem
                 key={'cartProduct'+key}
-                product={product}/>);
+                product={product}
+                removeAll={removeAll}
+                inCart={inCart}
+            />);
         })
         setInCart(itemsInCart);
         if(itemsInCart.length !== 0){
@@ -36,7 +48,7 @@ const Cart = (props) => {
             setIsCart(false);
         }
 
-    },[]);
+    },[props.userCart]);
 
     return (
         <div className="CartContainer">
