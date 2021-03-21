@@ -1,0 +1,13 @@
+.Link {
+  margin: 20px auto;
+  text-align: center;
+  &__home{
+    font-size: 1.3rem;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #333;
+    background-color: #70a6fd;
+    padding:5px;
+    color: #222;
+  }
+}
