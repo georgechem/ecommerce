@@ -4,6 +4,7 @@ import {useState, useEffect} from 'react';
 import './CartItem.scss';
 /* FROM Cart
 props.product
+props.removeAll
  */
 const CartItem = (props) => {
 
@@ -21,7 +22,13 @@ const CartItem = (props) => {
                 <input
                     className="CartItem__btn--edit"
                     type="submit"
-                    value="edit"
+                    value="+"
+                />
+                <input
+                    style={{minWidth: 24}}
+                    className="CartItem__btn--edit"
+                    type="submit"
+                    value="-"
                 />
                 <img className="CartItem__img" src={props.product.img} alt="product thumbnail"/>
                 <div className="CartItem__name"><em>{props.product.name}</em></div>

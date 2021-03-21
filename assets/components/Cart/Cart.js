@@ -31,6 +31,8 @@ const Cart = (props) => {
         })
     }
 
+
+
     useEffect(() => {
         const itemsInCart = [];
         props.userCart.items.forEach((product, key)=>{
@@ -38,7 +40,6 @@ const Cart = (props) => {
                 key={'cartProduct'+key}
                 product={product}
                 removeAll={removeAll}
-                inCart={inCart}
             />);
         })
         setInCart(itemsInCart);
