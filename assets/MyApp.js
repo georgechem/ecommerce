@@ -116,7 +116,7 @@ const MyApp = (props) => {
                            />);
                        }}
                        exact/>
-                <Route path="/cart"
+                <Route path={ex_path+"/cart"}
                        render={()=>{
                            return (<Cart
                                userCart={userCart}
@@ -130,7 +130,7 @@ const MyApp = (props) => {
                            />);
                        }}
                 />
-                <Route path="/product"
+                <Route path={ex_path+"/product"}
                        render={()=>{
                            return (<ProductDetails
                                    currentProduct={currentProduct}
@@ -138,13 +138,13 @@ const MyApp = (props) => {
                            );
                        }}
                 />
-                <Route path="/login"
+                <Route path={ex_path+"/login"}
                        render={()=>{
                     return <Login
                         setIsLogged={setIsLogged}
                     />;
                 }}/>
-                <Route path="/logout"
+                <Route path={ex_path+"/logout"}
                        render={()=>{
                            return <Logout
                                setIsLogged={setIsLogged}
