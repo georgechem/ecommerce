@@ -12,6 +12,7 @@ import ProductDetails from "./components/ProductDetails/ProductDetails";
 
 import {url_authorize, url_getAllProducts} from "./config";
 import {fetchGetConfig} from "./config";
+import {ex_path} from "./config";
 
 import './styles/myStyles.scss';
 
@@ -106,7 +107,7 @@ const MyApp = (props) => {
                     isLogged={isLogged}
                     userCart={userCart}
                 />
-                <Route path="/"
+                <Route path={ex_path}
                        render={()=>{
                            return (<Home
                                allProducts={allProducts}
