@@ -21,6 +21,9 @@ const MyApp = (props) => {
         items: []
     });
 
+    const [inCart, setInCart] = useState(null);
+    const [isCart, setIsCart] = useState(false);
+
     // DRY VIOLATION - NEED REFACTORING
     const updateStock = (id, value)=>{
         const newStock = [];
@@ -45,6 +48,9 @@ const MyApp = (props) => {
             let counter = cart[idx].amount;
             counter++;
             cart[idx].amount = counter;
+            setUserCart({
+                items: cart
+            })
         }else{
             cart.push(product);
             setUserCart({
@@ -113,6 +119,10 @@ const MyApp = (props) => {
                                setUserCart={setUserCart}
                                allProducts={allProducts}
                                setAllProducts={setAllProducts}
+                               inCart={inCart}
+                               setInCart={setInCart}
+                               isCart={isCart}
+                               setIsCart={setIsCart}
                            />);
                        }}
                 />

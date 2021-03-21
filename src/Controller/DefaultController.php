@@ -31,7 +31,7 @@ class DefaultController extends AbstractController
                 'id'=>1,
                 'name'=>'camera',
                 'price'=>rand(100, 10000)/100,
-                'inStock'=> rand(0, 15),
+                'inStock'=> 2,
                 'rating'=>rand(5,50)/10,
                 'numRating'=>rand(10, 200),
                 'category'=>'electronics',
