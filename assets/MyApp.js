@@ -132,7 +132,7 @@ const MyApp = (props) => {
                 <Route path="/product"
                        render={()=>{
                            return (<ProductDetails
-                                currentProduct={currentProduct}
+                                   currentProduct={currentProduct}
                                />
                            );
                        }}
