@@ -5,3 +5,19 @@
   max-width: 1200px;
   margin: 40px auto;
 }
+.Total{
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-top: 3px solid black;
+  margin: 0 2px;
+  padding: 10px;
+  &__total{
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  &__price {
+    font-size: 1.3rem;
+  }
+
+}
